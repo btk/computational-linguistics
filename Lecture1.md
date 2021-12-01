@@ -90,10 +90,27 @@ English stemmer algorithm with hardcoded letters
 . is also quite ambigious
 
 
+## Minimum Edit Distance
 
+How similar are two strings
+- graf
+- graft
+- grail
+- giraffe
 
+How to find;
+- Initial State: the word we are transforming
+- Operators: insert, delete, substitute
+- Goal state: the word we-are trying to get
+- Path cost what we want to minimize: the number of edits
 
+(Creates a tree)
 
+Computing MED;
+- Levenshshtein
+- minimum of quadrant + 1 on minimum edit distance table
+- if row-column same, take the diagnal value
+https://www.youtube.com/watch?v=We3YDTzNXEk
 
 
 
